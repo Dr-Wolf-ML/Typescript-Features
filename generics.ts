@@ -25,23 +25,23 @@ class ArrayOfAnything<T> {
 new ArrayOfAnything<number>([1, 2, 3]);
 new ArrayOfAnything<string>(['a', 'b', 'c']);
 
-// Example generics with functions
+//* Example generics with functions
 
 function printStrings(arr: string[]): void {
-  arr.map(item => console.log(item));
+  arr.map((item) => console.log(item));
 }
 
 function printNumbers(arr: number[]): void {
-  arr.map(item => console.log(item));
+  arr.map((item) => console.log(item));
 }
 
 function printAnything<T>(arr: T[]) {
-  arr.map(item => console.log(item));
+  arr.map((item) => console.log(item));
 }
 
 printAnything<string>(['a', 'b', 'c']);
 
-// Generic constraints
+//* Generic constraints
 
 class Car {
   print() {
@@ -71,7 +71,7 @@ printHousesOrCars<Car | House>([
   new Car(),
   new House(),
   new House(),
-  new Car()
+  new Car(),
 ]);
 printHousesOrCars<number[]>([1, 2, 3, 4]);
 printHousesOrCars<string[]>(['a', 'b', 'c']);

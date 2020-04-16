@@ -1,4 +1,4 @@
-// arrow functions (anonymous) assiged to a variable (named)
+//* arrow functions (anonymous) assiged to a variable (named)
 const add = (a: number, b: number): number => {
   return a + b;
 };
@@ -7,17 +7,17 @@ const subtract = (a: number, b: number) => {
   a - b;
 };
 
-// named functions
+//* named functions
 function divide(a: number, b: number) {
   a / b;
 }
 
-// anonymous functions assigned to a variable (named)
-const multiply = function(a: number, b: number) {
+//* anonymous functions assigned to a variable (named)
+const multiply = function (a: number, b: number) {
   a * b;
 };
 
-// void
+//* void
 const logger = (message: string): void => {
   console.log(message);
 };
@@ -28,15 +28,15 @@ const throwError = (message: string): void => {
   }
 };
 
-// destructuring
+//* destructuring
 const todaysWeather = {
   date: new Date(),
-  weather: 'sunny'
+  weather: 'sunny',
 };
 
 const logWeather = ({
   date,
-  weather
+  weather,
 }: {
   date: Date;
   weather: string;

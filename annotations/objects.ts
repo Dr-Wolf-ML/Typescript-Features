@@ -3,15 +3,15 @@ const profile = {
   age: 20,
   coords: {
     lat: 0,
-    lng: 15
+    lng: 15,
   },
   setAge(age: number): void {
     this.age = age;
-  }
+  },
 };
 
-// (the ts-error under name is totally fine)
+//! (the ts-error under name is totally fine)
 const { age, name }: { age: number; name: string } = profile;
 const {
-  coords: { lat, lng }
+  coords: { lat, lng },
 }: { coords: { lat: number; lng: number } } = profile;
